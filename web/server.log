@@ -1,0 +1,45 @@
+﻿node.exe : npm error code EPERM
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm error code EPERM:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm error syscall open
+npm error path C:\Users\Administrator\AppData\Local\npm-cache\_cacache\tmp\4633ae17
+npm error errno EPERM
+npm error FetchError: Invalid response body while trying to fetch https://registry.npmmirror.com/serve: EPERM: operatio
+n not permitted, open 'C:\Users\Administrator\AppData\Local\npm-cache\_cacache\tmp\4633ae17'
+npm error     at G:\Migrated\Roaming_nvm\v22.22.0\node_modules\npm\node_modules\minipass-fetch\lib\body.js:170:15
+npm error     at async Response.json (G:\Migrated\Roaming_nvm\v22.22.0\node_modules\npm\node_modules\minipass-fetch\lib
+\body.js:75:17)
+npm error     at async RegistryFetcher.packument (G:\Migrated\Roaming_nvm\v22.22.0\node_modules\npm\node_modules\pacote
+\lib\registry.js:98:25)
+npm error     at async RegistryFetcher.manifest (G:\Migrated\Roaming_nvm\v22.22.0\node_modules\npm\node_modules\pacote\
+lib\registry.js:128:23)
+npm error     at async getManifest (G:\Migrated\Roaming_nvm\v22.22.0\node_modules\npm\node_modules\libnpmexec\lib\index
+.js:27:22)
+npm error     at async missingFromTree (G:\Migrated\Roaming_nvm\v22.22.0\node_modules\npm\node_modules\libnpmexec\lib\i
+ndex.js:60:22)
+npm error     at async G:\Migrated\Roaming_nvm\v22.22.0\node_modules\npm\node_modules\libnpmexec\lib\index.js:182:32
+npm error     at async Promise.all (index 0)
+npm error     at async exec (G:\Migrated\Roaming_nvm\v22.22.0\node_modules\npm\node_modules\libnpmexec\lib\index.js:180
+:3)
+npm error     at async Npm.exec (G:\Migrated\Roaming_nvm\v22.22.0\node_modules\npm\lib\npm.js:207:9) {
+npm error   code: 'EPERM',
+npm error   errno: 'EPERM',
+npm error   syscall: 'open',
+npm error   path: 'C:\\Users\\Administrator\\AppData\\Local\\npm-cache\\_cacache\\tmp\\4633ae17',
+npm error   type: 'system'
+npm error }
+npm error
+npm error The operation was rejected by your operating system.
+npm error It's possible that the file was already in use (by a text editor or antivirus),
+npm error or that you lack permissions to access it.
+npm error
+npm error If you believe this might be a permissions issue, please double-check the
+npm error permissions of the file and its containing directories, or try running
+npm error the command again as root/Administrator.
+npm error Log files were not written due to an error writing to the directory: C:\Users\Administrator\AppData\Local\npm
+-cache\_logs
+npm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal
